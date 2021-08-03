@@ -1,0 +1,535 @@
+@font-face{
+    font-family: Montserrat-black;
+    src: url(../../font/Montserrat-Black.ttf);
+}
+@font-face{
+    font-family: Montserrat-bold;
+    src: url(../../font/Montserrat-Bold.ttf);
+}
+b{
+    font-weight: 900 !important;
+    font-family: 'Montserrat-bold', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@mixin  phablet {
+    @media (min-width:37.5em ) {
+        @content ;
+      }
+ }
+ @mixin mobile {
+    @media (max-width: 37.5em) {
+        @content ;
+      }
+ }
+ @mixin tablet {
+    @media (max-width: 50em) {
+        @content ;
+      }
+ }
+ @mixin laptop {
+    @media (max-width: 64em) {
+        @content ;
+      }
+ }
+ @mixin desktop {
+    @media (max-width: 70em) {
+        @content ;
+      }
+ }
+ @mixin large-desktop {
+    @media (min-width: 75em) {
+        @content ;
+      }
+ }
+ @mixin xr {
+    @media (max-width: 450px) {
+        @content ;
+      }
+ }
+
+ @mixin x {
+    @media (max-width: 350px) {
+        @content ;
+      }
+ } 
+
+
+ body{
+     background-color: #000000 !important;
+     height: 100%;
+     width: 100%;
+ }
+ *{
+    //  font-family: 'Montserrat',;
+     font-family: 'Montserrat', sans-serif;
+     color: #fff;
+ }
+ .main-content{
+     width: 100%;
+     height: 100%;
+ }
+ .backimg1{
+     background-image: url('../../images/01.png');
+     background-position: center;
+     height: 100%;
+     width: 100%;
+    position: absolute;
+    background-size: cover;
+    @include xr(){
+        // width: unset;
+    }
+
+ }
+ .imgheader{
+     @include x(){
+         flex: unset !important;
+         max-width: unset !important;
+         width: unset !important;
+     }
+ }
+ .manual-btn-header{
+    align-items: center;
+    display: flex !important;
+     font-size: 2rem !important;
+     font-family: 'Montserrat';
+     font-weight: bold !important;
+    background-color: #55F2B0 !important;
+    color: #fff !important;
+    // border:1px solid #F334E9!important;
+    border-radius: 0px !important;
+    &:hover{
+        color: unset;
+    }
+    @include mobile(){
+        font-size: 1.5rem !important;
+    }
+    @include xr(){
+        font-size: 1rem !important;
+    }
+ }
+ .header-text{
+     color: #fff;
+     font-size: 100px;
+    //  padding-top: 12rem !important;
+    @include tablet(){
+        font-size: 80px;
+    }
+    @include mobile(){
+        font-size: 50px;
+    }
+    @include x(){
+        font-size:  30px;
+    }
+    
+ }
+ .timer{
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 100%;
+    margin-top: 10px;
+     &>div{   
+        padding: 2rem 3rem 3rem 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        text-align: center;  
+        margin: 0 50px; 
+        font-weight: bold;
+        font-size: 2rem;
+        @include laptop(){
+            font-size: 1.5rem;
+            padding: 1rem 3rem 2rem 3rem;
+            margin: 0 30px;
+        }
+        @include tablet(){
+            font-size: 1.2rem;
+            padding: 1.5rem;
+            margin: 0 25px; 
+        }
+        @include mobile(){
+            margin: 20px 50px; 
+            font-size: 1rem;
+            // padding: 2rem;
+            margin: 20PX 30px;
+            font-size: 1rem;
+            padding: 1rem 4rem 1rem 4rem;
+        }
+        @include xr(){
+            margin: 20PX 30px;
+            font-size: 1rem;
+            padding: 1rem 3rem 1rem 3rem;
+        }
+        @include x(){
+            margin:10px 5px;
+            
+        }
+        &>span{
+            font-size: 5rem;
+            margin-bottom: -80px;
+            font-family: 'Montserrat-black', sans-serif;
+            @include laptop(){
+                margin-bottom: -50px;
+
+            }
+            @include tablet(){
+                font-size: 2.5rem;
+                margin-bottom: -30px;
+            }
+            @include mobile(){
+                font-size: 3.5rem;
+                margin-bottom: -10px;
+            }
+            @include xr(){
+                margin-bottom: -40px;
+            }
+        }
+    }
+    &>div:nth-child(odd){
+        background-color: #f334e95e;
+        // opacity: 0.5;
+    }
+    
+    &>div:nth-child(even){
+        background-color: #55f2b066;
+        // opacity: 0.5;
+    }
+ }
+
+
+
+ .location-date-table{
+    margin-top: 5rem;
+    // @include x(){
+    //     margin-top: 5rem;
+
+    // }
+     &>div{
+         color: #fff;
+        //  text-align: center;
+         background-color: #000000;
+         &>div{
+         &>h1{
+             font-size:2.5rem;
+             @include x(){
+                 font-size: 1.5rem;
+             }
+         }
+         &>img{
+             @include mobile(){
+                width: 50%;
+             }
+         }
+        }
+
+     }
+     &>div:nth-child(odd){
+        border: 4px solid #F334E9;
+     }
+     &>div:nth-child(even){
+        border: 4px solid #55F2B0;
+     }
+ }
+ .p-5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .body-text-start{
+     &:nth-child(odd){
+     margin-top: 5rem;
+    }
+     &>h1{
+         font-size: 65px;
+         @include mobile(){
+             font-size: 35px;
+         }
+     }
+     &>div>img{
+         margin-top: 3rem;
+         @include mobile(){
+             width: 50%;
+         }
+     }
+     &:nth-child(even){
+     margin-top: 6rem !important;
+     }
+     &:nth-child(odd){
+        margin-top: 3rem;
+     }
+     &>div>a>img{
+         @include mobile{
+             width: 200px;
+         }
+     }
+ }
+ .quality-score{
+     margin-top: 3rem;
+ }
+ .body-text{
+     font-size: 2.5rem;
+     margin-top: 2rem;
+     @include laptop(){
+         font-size: 1.5rem;
+     }
+     @include x(){
+         font-size: 1rem;
+     }
+ }
+
+ input[type="text"]{
+    background: #fff0;
+    border: 1px solid #ffffff;
+    border-radius: unset;
+    margin: 1.5rem;
+    padding:2.5rem 8rem 2.5rem 2rem;
+    @include laptop(){
+        margin: 0.5rem;
+    }
+    @include tablet(){
+        padding: 1.5rem 6rem 1.5rem 1.5rem;
+    }
+    @include mobile(){
+        padding: 1rem 3rem 1rem 1rem;
+    }
+    @include x(){
+        padding: 5px;
+        font-size: 15px;
+    }
+ }
+ .form{
+
+     margin-top: 4rem;
+     padding-top: 4rem;
+     background-repeat: no-repeat;
+     background-image: url('../../images/02.png');
+     background-position: center;
+     height: 100vh;
+     width: 100%;
+     @include laptop(){
+        height: 110vh;
+    }
+     @include tablet(){
+         height: 100%;
+     }
+     @include laptop(){
+         &>form>.text-left{
+            text-align: center !important;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+     background-size: cover;
+     &>h1{
+         letter-spacing: 5px;
+         @include x(){
+             margin-top: -1rem;
+         }
+     }
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     @include x{
+         margin-bottom: 5rem;
+     }
+ }
+// .form-text-quation-taq{
+//     margin-left: 21%;
+// }
+
+.form-checkboxes{
+    // opacity: 0.5;
+    // position: absolute;
+    // cursor: pointer;
+}
+.checkbox-label{
+    margin-left: 10px;
+}
+
+/* This css is for normalizing styles. You can skip this. */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .new {
+    padding: 50px;
+  }
+  
+  .form-group {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .form-group label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .form-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .img-footer-section{
+      margin-top: 4rem;
+      &>a{
+        margin: 0 1rem;
+      }
+  }
+  .footer-text{
+      margin:4rem 0;
+      font-size: 1.5rem;
+  }
+  .top-header-date-parent{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo{
+      max-width: 25%;
+      flex: 0 0 25%;
+  }
+  .logofooter{
+    max-width: 15%;
+    flex: 0 0 25%;
+    @include mobile(){
+        max-width: 25%;
+    }
+    // &>div>span{
+
+    // }
+}
+  label{
+      margin-left: 10px;
+  }
+  div.col-md-6{
+    @include laptop(){
+        flex-direction: column;
+        padding: 20px;
+        &>.p-5{
+            text-align: center;
+        }
+    }
+  }
+  
+// element.style {
+// }
+.pt-5, .py-5 {
+    padding-top: 3rem!important;
+}
+.col-6 {
+    @include xr(){
+        max-width: 40% !important;
+    }
+}
+.col-auto {
+    @include xr(){
+        max-width: 60%;
+    }
+}
+
+svg {
+    width: 70px;
+    height: 70px;
+    fill: #8f8f8f;
+    cursor: pointer;
+  }
+  svg.instagram:hover {
+    fill: #a722aa;
+  }
+  svg.facebook:hover {
+    fill: #475993;
+  }
+  svg.twitter:hover {
+    fill: #03A9F4;
+  }
+  
+  body {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    place-items: center center;
+  }  
+
+  .svg-footer{
+      display: flex;
+    justify-content: center;
+    }
+
+.btn{
+    padding: 10px !important;
+    font-family: 'Montserrat-bold', sans-serif;
+
+}
+input.btn.manual-btn-header{
+    padding: 5px 20px !important;
+    @include x(){
+        // margin-top: -3rem;
+    }
+}
+span.waves-input-wrapper.waves-effect.waves-light {
+    @include x(){
+        margin-top: -3rem;
+    }
+}
+.pt-8.form.text-center {
+    font-size: 1rem;
+    @include tablet(){
+        font-size: 1rem;
+    }
+    @include x(){
+        font-size: 0.7rem;
+    }
+    &>h1{
+        font-size: 4rem;
+        @include tablet(){
+            font-size:2.5rem ;
+        }
+    }
+}

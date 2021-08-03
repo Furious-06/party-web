@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Party Template</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- jquary cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+<!-- script my -->
+<script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        <section>
+            <div class="backimg1" >
+                <div class="container-fluid">
+                <div class="row " style="flex-direction: row;justify-content: space-around;">
+                   
+                    <div class="imgheader  col-6 " >
+                        <a href="#"><img class="col-auto  logo" src="images/android-logo.png" alt=""></a>
+                    </div>
+                    <div class=" " style="display: flex;align-items: center;">
+                        <a class="btn manual-btn-header" href="">RSVP HERE</a>
+                    </div>
+                </div>
+            <div class="top-header-date-parent">
+
+                <div class="pt-5">
+                    <p class="text-center header-text">
+                        PARTY WILL START IN
+                    </p>
+                </div>
+
+                <div class="timer row">
+
+                    <div class="day"><span id="day"></span> <br> DAYS</div>
+                    <div class="hour"><span id="hours"></span> <br> HOURS</div>
+                    <div class="min"><span id="minutes"></span> <br> MINUTES</div>
+                    <div class="second"><span id="seconds"></span> <br> SECOND</div>
+
+                </div>
+            </div>
+                <div class="row location-date-table">
+                    <div class="col-md-6" style="display: flex;justify-content: center;">
+                        <div class="" style="display: flex;justify-content: center;">
+                            <img class="" src="images/calendar (4).svg" alt="">
+                        </div>
+                        <div class="p-5">
+                            <h1><b>WHEN</b></h1>
+                            <h1>28-JAN 2020</h1>
+                            <p>5:00pm - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="display: flex;justify-content: center;">
+                        <div class="" style="display: flex;justify-content: center;">
+                            <img class="" src="images/place.svg" alt="">
+                        </div>
+                        <div class="p-5">
+                            <h1><b>WHERE</b></h1>
+                            <h1>4627 Koval Lane<br>Las Vegas, NV 89109</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center body-text-start">
+                    <h1>Sponsored-by</h1>
+                    <div class="quality-score">
+                        <a href="https://www.ipqualityscore.com/"><img src="images/IPQualtiyScore.png" alt=""></a>
+                    </div>
+
+                    <div class="body-text">
+                        <p class="container">
+                            IPQualityScore's suite of fraud prevention tools automate quality control to prevent bots,
+                            fake accounts, fraudsters, suspicious transactions, & malicious
+                            users without interrupting the user experience.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="text-center body-text-start">
+                    <div>
+                        <a href="https://linktrust.com/"><img src="images/LinkTrust.png" alt=""></a>
+                    </div>
+
+                    <div class="body-text">
+                        <p class="container">
+                            LinkTrust software platform empowers advertisers, ad networks, retailers and marketing
+                            agencies
+                            to accurately and easily manage,
+                            track and attribute performance marketing campaigns for thousands of customers across
+                            the world.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-8 form text-center">
+                    <h1 class="">RSVP HERE</h1>
+                    <form action="email.php" method="POST">
+                        <input type="text" name="firstname" placeholder="FIRST NAME" class="form-control-lg " aria-required="true" required>
+                        <input type="text" name="lastname" placeholder="LAST NAME" class="form-control-lg " aria-required="true" required>
+                        <br>
+                        <input type="text" name="title" placeholder="TITLE" class="form-control-lg " aria-required="true" required>
+                        <input type="text" name="email" placeholder="EMAIL" class="form-control-lg " aria-required="true" required>
+                        <br>
+                        <input type="text" name="domain" placeholder="DOMAIN" class="form-control-lg " aria-required="true" required>
+                        <input type="text" name="phone" placeholder="PHONE" class="form-control-lg " aria-required="true" required>
+                        <br>
+                        <p class="text-left container-fluid"><img src="images/asset1.png" alt="">WHAT KIND OF COMPANY ARE YOU?<br>
+                        
+                         <div class="text-left container-fluid">
+                         <div class="row">
+                             
+                          <div class="form-group checkbox-label">
+                            <input type="checkbox" name="company[]" value="ADVERTISER" id="adv">
+                            <label for="adv">&nbsp; ADVERTISER</label>
+                          </div>
+                          <div class="form-group checkbox-label">
+                            <input type="checkbox" name="company[]" value="AFFILIATE" id="aff">
+                            <label for="aff">&nbsp; AFFILIATE</label>
+                          </div>
+                          <div class="form-group checkbox-label">
+                            <input type="checkbox" name="company[]" value="MAILER" id="mail">
+                            <label for="mail">&nbsp; MAILER</label>
+                          </div>
+                          <div class="form-group checkbox-label">
+                            <input type="checkbox" name="company[]" value="OTHER" id="other">
+                            <label for="other">&nbsp; OTHER</label>
+                          </div>
+                        </div>
+                        </div>
+
+                        </p>
+                        <br>
+
+                        <input type="submit" name="submit" value="SUBMIT" class="btn manual-btn-header">
+                        
+                    </form>
+                </div>
+                <div class="row location-date-table">
+                    <div class="col-md-6" style="display: flex;justify-content: center;">
+                        <div class="" style="display: flex;justify-content: center;">
+                            <img class="" src="images/calendar (4).svg" alt="">
+                        </div>
+                        <div class="p-5">
+                            <h1><b>WHEN</b></h1>
+                            <h1>28-JAN 2020</h1>
+                            <p>5:00pm - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="display: flex;justify-content: center;">
+                        <div class="" style="display: flex;justify-content: center;">
+                            <img class="" src="images/place.svg" alt="">
+                        </div>
+                        <div class="p-5">
+                            <h1><b>WHERE</b></h1>
+                            <h1>4627 Koval Lane<br>Las Vegas, NV 89109</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="svg-footer pt-5">
+                      
+                        <svg class="logofooter facebook">
+                        <use xlink:href="#facebook" />
+                      </svg>
+                    
+                      <svg class="logofooter instagram"  >
+                        <use xlink:href="#instagram" />
+                      </svg>
+                      
+                    <svg class="logofooter twitter" >
+                        <use xlink:href="#twitter" />
+                      </svg>
+                    </div>
+                      <svg display="none">
+                        
+                      
+                        <symbol   x="0px" y="0px"  viewBox="0 0 546.773 546.773" style="enable-background:new 0 0 546.773 546.773;" id="facebook">
+                            <g id="Group_5" data-name="Group 5" transform="translate(0)">
+                                <path d="M382.1,0h-56.953c-43.574,0-74.872,10.343-93.893,31.022c-19.027,20.686-28.532,51.151-28.532,91.408v38.373    c0,10.141-8.219,18.36-18.36,18.36H164.68c-10.141,0-18.36,8.219-18.36,18.36v57.503c0,10.141,8.219,18.36,18.36,18.36h19.682    c10.141,0,18.36,8.219,18.36,18.36v236.666c0,10.141,8.219,18.36,18.36,18.36h76.414c10.141,0,18.36-8.22,18.36-18.36V291.747    c0-10.142,8.22-18.36,18.36-18.36h38.592c10.142,0,19.224-8.176,20.289-18.256l6.095-57.712    c1.065-10.085-6.291-18.256-16.433-18.256h-48.549c-10.141,0-18.36-8.219-18.36-18.36v-28.752c0-7.075,0.331-12.552,0.997-16.426    c0.661-3.868,2.154-7.681,4.48-11.445c2.319-3.757,6.083-6.358,11.279-7.797c5.195-1.438,12.111-2.16,20.734-2.16h28.752    c10.141,0,18.359-8.219,18.359-18.36V18.36C400.459,8.219,392.24,0,382.1,0z" data-original="#000000" class="active-path" />
+                              </g>
+                        </symbol>
+
+                        <symbol  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" id="instagram">
+                            <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+                          </symbol>
+                      
+                        <symbol   x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" id="twitter">
+                            <!-- <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z" /> -->
+                            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z" data-original="#000000" class="active-path" data-old_color="#000000" />
+                        </symbol>
+                      </svg>
+
+                    <!-- <div class="img-footer-section text-center">
+                        <a href="#" ><img class="logofooter" src="images/facebook (6).svg" alt=""></a>
+                        <a href="#" ><img class="logofooter" src="images/instagram (10).svg" alt=""></a>
+                        <a href="#" ><img class="logofooter" src="images/twitter.svg" alt=""></a>
+
+                    </div> -->
+
+                    <div>
+                        <div class="footer-text text-center">
+                            Copyright © 2020 COMPANY NAME. All Rights Reserved.   
+                            <br/>
+                            Terms & Conditions     Privacy Policy
+                        </div>
+                    </div>
+                </footer>
+
+            
+            
+                </div>
+            </div>
+        </section>
+        <!-- end container fluid -->
+
+
+    </div>
+
+    <script>
+        
+        var interval = setInterval(function(){
+          var dest = new Date("jan 28, 2020 06:30:00").getTime();
+          var now = new Date().getTime();
+          var diff = dest - now;
+          var days = Math.floor(diff/(1000*60*60*24));
+          var hours = Math.floor((diff % (1000 * 60 * 60 *24))/(1000 * 60 *60));
+          var minutes = Math.floor((diff % (1000 * 60 * 60))/(1000 * 60));
+          var seconds = Math.floor((diff % (1000 * 60))/1000 );
+        
+        //   console.log(seconds);   
+          $('#day').html(days);
+          $('#hours').html(hours);
+          $('#minutes').html(minutes);
+          $('#seconds').html(seconds);
+            if(days == 00 && hours == 00 && seconds == 00 && minutes == 00  ){
+                clearInterval(interval);
+            }
+        },1000)
+
+        $('.facebook').on('click',function(){
+            window.location.href = "https://www.facebook.com";
+        });
+        $('.instagram').on('click',function(){
+            window.location.href = "https://www.instagram.com ";
+        });
+        $('.twitter').on('click',function(){
+            window.location.href = "https://twitter.com ";
+        });
+        
+        if(navigator.userAgent.search('Firefox')!=-1){
+            console.log("if running");
+            $('.timer>div>span').css('margin-bottom','-10px');
+            $('.timer>div').css('padding','0rem 3rem 1rem 3rem');
+        }
+
+    </script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+</body>
+
+</html>
